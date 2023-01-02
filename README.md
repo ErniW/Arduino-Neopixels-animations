@@ -1,4 +1,4 @@
-**A reference for light animations using Neopixels. During my classes I usually cover some basics of Neopixels but these examples, based on wave generation and noise function are advanced and not required to pass my course. However, for some projects it can be necessary to achieve desired effect. To understand the code, student must understand how sine wave is made and be proficient in programming.**
+**A reference for light animations using Neopixels. During my classes I usually cover some basics of Neopixels but these examples, based on wave generation and noise function are a little more advanced and not required to pass my course. However, for some projects such effects might be necessary to achieve desired results. To understand the code, student must understand how sine wave is made and be proficient in programming.**
 
 ### Why some light animations are better than others?
 - Trigonometric functions for smooth movement instead of linear increment/decrement, especially in fade-in and fade-out effects. However, there are non-smooth effects that looks great.
@@ -28,7 +28,8 @@
 
 ## List of animations:
 ### Sine wave:
-- **A basic HSB rainbow from sine wave** (for someone who has never seen FastLed library).
+- **Basic HSB linear rainbow**  (for someone who has never seen FastLed library).
+- **Basic HSB rainbow from sine wave**
 - **Back and forth movement of sine**, moving with another sine.
 - **Back and forth movement of sine but constantly moving forward.**
 - **Shrink and grow** of moving sine wave.
