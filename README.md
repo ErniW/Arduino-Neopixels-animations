@@ -52,9 +52,11 @@
 - **Noise outer space**, moves from middle toward sides.
 - **Noise outer space with intervals**.
 
-### Mixed effects:
+### Mixed effects and transitions:
+- Overglow swipe
+- Noise + scanner (only on active areas noise is working)
+- Noise + scanner + fadein/out
 
-### Transitions:
 
 
 ---------
