@@ -92,7 +92,6 @@ single grow to half and then rapid fill
 ### Mixed effects:
 - **Slow and fast fade in of lines**
 
-### Transitions:
 
 ### Fit into BPM:
 
