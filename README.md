@@ -45,6 +45,20 @@ Examples introduce basics of creating color effects with sine waves.
 
 -------------
 
+
+ X Shrink and grow multiple
+X shrink and grow moving
+shrink and grow slime
+scanner effect
+
+
+
+
+
+
+
+------------
+
 ## List of animations:
 ### Sine wave:
 X- **Basic HSB linear rainbow**  for someone who has never seen FastLed library.
@@ -55,7 +69,7 @@ X- **One color with white sweep**
 ?- **HSB rainbow with bloom effect** one sine is controlling hue, another one controls the brightness (opposite direction).
 X **Back and forth movement of sine**, moving with another sine.
 ? **Back and forth movement of sine but slightly moving forward.**
-- **Shrink and grow** of single amplitude, centered.
+X **Shrink and grow** of single amplitude, centered.
 - **Shrink and grow** of moving sine wave.
 - **Shrink and grow from wave peak**
 - **Shrink and grow from wave peak fragmented** You can define your own amount of pulses or disable movement.
