@@ -39,13 +39,13 @@ void loop() {
 
  FastLED.clear();
 
-  for(int i=0; i< spread; ++i){
+  for(int i=0; i < spread; ++i){
 
     float brightness = cos(PI + (i * step));
     brightness = (brightness + 1) / 2;
     brightness *= 255;
 
-    for(int j=0; j< FRAGMENT_AMOUNT; ++j){
+    for(int j=0; j < FRAGMENT_AMOUNT; ++j){
       int index = ((int)snailBegin + i) % FRAGMENT_SIZE;
       index += j * FRAGMENT_SIZE;
       leds[index] = CHSV(0, 0, brightness);
