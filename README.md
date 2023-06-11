@@ -1,6 +1,6 @@
 **A reference for light animations using Neopixels. During my classes I usually cover some basics of Neopixels but these examples, based on wave generation and noise function are a little more advanced and not required to pass my course. However, for some projects such effects might be necessary to achieve desired results. To understand the code, student must understand how sine wave is made and be proficient in programming.**
 
-**I decided to put them into a single repository so I don't have to search or rewrite them each semester for students project.**
+**I decided to put them into a single repository so I don't have to search or rewrite them each semester for students project. Some of these examples you won't find anywhere else.**
 
 ### Why are some light animations better than others?
 - Trigonometric functions for smooth movement instead of linear increment/decrement, especially in fade-in and fade-out effects. However, there are non-smooth effects that looks great.

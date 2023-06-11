@@ -1,6 +1,6 @@
 
 
-#define MAX_BLINK_AMOUNT 4
+// #define MAX_BLINK_AMOUNT 4
 
   LinkedList::LinkedList(){
 
@@ -26,61 +26,27 @@
 
   void LinkedList::remove(Blink* b){
 
-    Blink** current = &_head;
+    if(b == _head){
+      _head = b->next;
+      delete b;
+    }
+    else{
+      Blink* current = _head;
 
-    while (*current != nullptr && *current != b) {
-        current = &(*current)->next;
+      while (current->next != nullptr) {
+        
+        if(current->next == b) break;
+
+        current = current->next;
+      }
+
+      Blink* toRemove = current->next;
+      current->next = toRemove->next;
+      delete toRemove;
+
     }
 
-    if (*current == nullptr) {
-        Serial.println("Node not found in the linked list.");
-        return;
-    }
-
-    Blink* toRemove = *current;
-    *current = (*current)->next;
-    delete toRemove;
     _length--;
-    // Serial.println("Element removed");
-
-    
-
-    //Blink* toRemove = b;
-
-    // if(b == _head){
-    //   Serial.println("removing head");
-    //   _head = b->next;
-    //   delete toRemove;
-    //   _length--;
-    //   return;
-    // }
-
-    // if(b->next){
-    //   b = b->next;
-    //   delete toRemove;
-    //   _length--;
-    //   return;
-    // }
-
-    // Blink* toRemove = b;
-
-    // Blink* prev = nullptr;
-    // Blink* current = _head;
-
-    // while(current != nullptr && current != b){
-    //   prev = current;
-    //   current = current->next;
-    // }
-
-    // if(prev != nullptr){
-    //     prev->next = current->next;
-    // } 
-    // else{
-    //     _head = current->next;
-    // }
-
-    // delete toRemove;
-    // _length--;
 
   }
 
