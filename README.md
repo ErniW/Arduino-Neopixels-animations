@@ -45,8 +45,10 @@ They use sine and cosine wave, HSB color palette, lerp.
 ### 20: Interval based example.
 This one is important because it shows how to do a non-blocking animation which takes a certain amount of time. You can use it as a reference if you have to match BPM in your project. For example, one of project used it for breathing at defined intervals. Remember that this method is not 100% precise but enough for most scenarios.
 
-### 21-? Blinking.
-Using sine wave blink produces more interesting and natural blink effect than just randomly triggering LED on and off.
+### 21-24 Random blinking.
+Using sine wave blink produces more interesting and natural blink effect than just randomly triggering LED on and off. *The first example is a blocking while loop approach but it's easier to understand if you aren't familiar with structs.*
+
+Multiple blinks are quite difficult to create, there are various possible implementations, here I'm using Linked List but Queue can also be used. Linked List makes sense when, for example, each pulse has different duration. Simple multiple blinks without sine wave animation is much easier to implement.
 
 ### ?-? Perlin noise.
 Perlin noise, as an algorithm for generating procedural textures can be used to produce natural-behaving randomness.
