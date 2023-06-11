@@ -48,7 +48,7 @@ This one is important because it shows how to do a non-blocking animation which 
 ### 21-24 Random blinking.
 Using sine wave blink produces more interesting and natural blink effect than just randomly triggering LED on and off. *The first example is a blocking while loop approach but it's easier to understand if you aren't familiar with structs.*
 
-Multiple blinks are quite difficult to create, there are various possible implementations, here I'm using Linked List but Queue can also be used. Linked List makes sense when, for example, each pulse has different duration. Simple multiple blinks without sine wave animation is much easier to implement.
+Multiple blinks are quite difficult to create, the simplified version is prefered. However, it gives lesser flexibility. There are various possible implementations, here I'm using Linked List but Queue can also be used. Linked List makes sense when, for example, each pulse has different duration. Simple multiple blinks without sine wave animation is much easier to implement. For in-place removal LinkedList stores previous Node pointer to reduce O-notation.
 
 ### ?-? Perlin noise.
 Perlin noise, as an algorithm for generating procedural textures can be used to produce natural-behaving randomness.
